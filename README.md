@@ -43,7 +43,7 @@ npm install
 
 4. Inicie o servidor do backend:
 ```\bash
-npm start
+npm run start
 ```
 
 
