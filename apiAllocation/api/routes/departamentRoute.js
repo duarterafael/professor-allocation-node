@@ -1,10 +1,14 @@
-const { Router } = require('express');
+const express = require('express');
+require('express-group-routes');
+
 const DepartamentController = require('../controllers/DepartamentController');
 
-const router = Router();
+const app = express();
 
-router.get('/listDpt', DepartamentController.getAllDepartaments);
-router.get('/listDpt/:id', DepartamentController.getById);
-router.post('/create', DepartamentController.createDpt);
+app.group("/department", (router) => { 
+    router.get('/list', DepartamentController.getAllDepartaments);
+    router.get('/:id', DepartamentController.getById);
+    router.post('/new', DepartamentController.createDpt);
+});
 
-module.exports = router;
+module.exports = app;
