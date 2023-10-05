@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "qualiti_school",
-    "host": "127.0.0.1",
+    "username": "sql9651213",
+    "password": "KkMeP2bSYh",
+    "database": "sql9651213",
+    "host": "sql9.freemysqlhosting.net",
     "dialect": "mysql"
   },
   "test": {
