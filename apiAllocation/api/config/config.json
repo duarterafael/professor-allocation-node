@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "sql9651213",
-    "password": "KkMeP2bSYh",
-    "database": "sql9651213",
-    "host": "sql9.freemysqlhosting.net",
+    "username": "root",
+    "password": "root",
+    "database": "qualiti_univerity",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "sql9651213",
+    "password": "KkMeP2bSYh",
+    "database": "sql9651213",
+    "host": "sql9.freemysqlhosting.net",
     "dialect": "mysql"
   }
 }
