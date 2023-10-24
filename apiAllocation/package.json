@@ -4,15 +4,16 @@
   "description": "",
   "main": "./api/index.js",
   "scripts": {
-    "start": "nodemon ./api/index.js",
+    "start": "npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all && nodemon ./api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-	  "build": "npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all && node ./api/index.js"
+    "build": "npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all && node ./api/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-group-routes": "^1.1.0",
     "express-validator": "^7.0.1",
